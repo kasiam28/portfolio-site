@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat";
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Playfair-Display";
+	font-weight: 700;
+}
+
+
+.banner {
+	padding: 5em 0;
+	.logo {
+		float: left;
+	}
+	h1 {
+		color: $grey;
+		text-align: right;
+		font-size: 5em;
+		display: inline;
+		float: right;
+		margin: 0;
+	}
+}
+
+.logo {
+	background: $pink;
+	border-radius: 100%;
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	text-align: center;
+	color: $white;
+	font-size: 1.1em;
+	font-family: "Montserrat";
+}
+
+.row {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.work {
+	background: $grey;
+	padding: 5em 0;
+	.card {
+		background: $white;
+		border-radius: .35em;
+		height: 450px;
+		display: table;
+	}
+	.card-full {
+		width: 100%;
+	}
+
+	.card-half {
+		width: 48.5%;
+		float: left;
+	}
+
+	.card-third {
+		width: 75%;
+		float: left;
+	}
+
+	.left {
+		margin-right: 1.5%;
+	}
+
+	.right {
+		margin-left: 1.5%;
+	}
+
+	.tall {
+		height: 700px;
+	}
+
+	// .card-1 {
+	// 	@include bg_img('../images/design_recources.svg', 80%, 280px 20px);
+	// }
+	// .card-2 {
+	// 	@include bg_img('../images/design_for_devs.svg', 120%, -178px -205px);
+	// }
+	// .card-3 {
+	// 	@include bg_img('../images/lolcolors.svg', 150%, 40px 168px);
+	// }
+	// .card-4 {
+	// 	@include bg_img('../images/bruce.svg', 120%, 150px -160px);
+	// }
+
+	.card-inner {
+		display: table-cell;
+		vertical-align: middle;
+		height: 100%;
+		padding: 1.5em 12%;
+		color: $white;
+		p {
+			font-size: 1em;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		h2 {
+			font-size: 4em;
+			margin: 0;
+		}
+
+	}
+
+	.pink, .green, .purple, .blue {
+		border-radius: .35em;
+	}
+
+	.pink {
+		background: rgba(230, 56, 222, .6);
+	}
+
+	.green {
+		background: rgba(80, 218, 93, .6);
+	}
+
+	.purple {
+		background: rgba(145, 89, 219, .6);
+	}
+
+	.blue {
+		background: rgba(131, 226, 245, .6);
+	}
+
+	.view-more {
+		width: 25%;
+		float: left;
+		height: 450px;
+		padding-left: 3em;
+
+		p {
+			font-size: 1.5em;
+			font-weight: 700;
+			line-height: 20px;
+			margin: 0;
+			color: rgba(146, 145, 171, 1);
+			font-family: "Playfair-Display";
+			padding-top: 220px;
+		}
+		a {
+			text-decoration: none;
+			&:hover {
+				p {
+					color: $pink;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	padding: 3em 0;
+	.logo {
+		float: left;
+		margin: 0;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-top: 1em;
+		li {
+			display: inline;
+			float: left;
+			margin-left: 4em;
+			.title {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: .75em;
+				display: block;
+				padding-bottom: .5em;
+			}
+			.links {
+				font-family: "Playfair-Display";
+				font-size: 1.75em;
+				a {
+					text-decoration: none;
+					color: $grey;
+					&:hover {
+						color: $pink;
+					}
+				}
+			}
+		}
+	}
+}
